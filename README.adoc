@@ -1,0 +1,9 @@
+This is a trivial Asciidoctor extension that demonstrates how one can write extensions
+inside a Gradle build and consuming them immediately.
+
+Praise -> @mojavelinux and @alexsotob for writing the whole extension pilepile
+
+Hate -> @aalmiray for screwing up a simple example
+
+Meh -> /dev/null
+
