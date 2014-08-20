@@ -1,0 +1,15 @@
+= Example Manual
+Doc Writer <doc.writer@example.org>
+v1.0
+:example-caption!:
+
+Pig Latin is a constructed language game where words in English are altered according to a simple set of rules. Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an _ay_ (IPA [eɪ]) (for example, _pig_ yields _igpay_, _banana_ yields _ananabay_, and _trash_ yields _ashtray_). Also in the Northeastern United States many people only move the first letter not the first syllable so 'trash' yields 'rashtay'.
+
+The objective is to conceal the meaning of the words from others not familiar with the rules. The reference to Latin is a deliberate misnomer, as it is simply a form of jargon, used only for its English connotations as a "strange and foreign-sounding language."
+
+== Example
+
+The quick brown fox jumped over the lazy dog.
+
+[pig-latin]
+The quick brown fox jumped over the lazy dog.
