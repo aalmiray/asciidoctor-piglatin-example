@@ -3,8 +3,26 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.0'
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.6.1'
     }
 }
 
-apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+plugins {
+    id 'org.asciidoctor.jvm.convert' version '3.1.0'
+}
+
+repositories {
+    jcenter()
+}
+
+configurations {
+    adoc
+}
+
+dependencies {
+    adoc files('buildSrc/build/libs/buildSrc.jar')
+}
+
+asciidoctor {
+    configurations 'adoc'
+}
