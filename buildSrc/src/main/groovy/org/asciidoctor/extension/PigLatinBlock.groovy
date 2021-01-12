@@ -1,7 +1,7 @@
 package org.asciidoctor.extension
 
 import org.asciidoctor.extension.BlockProcessor
-import org.asciidoctor.ast.AbstractBlock
+import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.extension.Reader
 
 class PigLatinBlock extends BlockProcessor {
@@ -12,7 +12,7 @@ class PigLatinBlock extends BlockProcessor {
         super(name, [contexts: [':paragraph'], content_model: ':simple'])
     }
 
-    def process(AbstractBlock parent, Reader reader, Map<String, Object> attributes) {
+    def process(StructuralNode parent, Reader reader, Map<String, Object> attributes) {
         createBlock(parent, 'paragraph', toPigLatin(reader), attributes, [:])
     }
 
